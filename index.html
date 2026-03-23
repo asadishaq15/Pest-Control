@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,40 +22,40 @@
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: var(--dark);
             overflow-x: hidden;
         }
-        
+
         a {
             text-decoration: none;
             color: inherit;
         }
-        
+
         ul {
             list-style: none;
         }
-        
+
         img {
             max-width: 100%;
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -64,56 +65,56 @@
             transition: var(--transition);
             text-align: center;
         }
-        
+
         .btn-primary {
             background-color: var(--primary-blue);
             color: white;
             border: 2px solid var(--primary-blue);
         }
-        
+
         .btn-primary:hover {
             background-color: transparent;
             color: var(--primary-blue);
         }
-        
+
         .btn-secondary {
             background-color: var(--primary-green);
             color: white;
             border: 2px solid var(--primary-green);
         }
-        
+
         .btn-secondary:hover {
             background-color: transparent;
             color: var(--primary-green);
         }
-        
+
         .btn-outline {
             background-color: transparent;
             color: var(--primary-blue);
             border: 2px solid var(--primary-blue);
         }
-        
+
         .btn-outline:hover {
             background-color: var(--primary-blue);
             color: white;
         }
-        
+
         .btn-lg {
             padding: 18px 45px;
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
+
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-        
+
         .btn:active {
             transform: translateY(-1px);
         }
-        
+
         /* Header Styles */
         header {
             background-color: white;
@@ -123,44 +124,44 @@
             z-index: 1000;
             padding: 15px 0;
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
         }
-        
+
         .logo img {
             height: 50px;
         }
-        
+
         .nav-links {
             display: flex;
             align-items: center;
         }
-        
+
         .nav-links li {
             margin-left: 30px;
             font-weight: 500;
             display: flex;
             align-items: center;
         }
-        
+
         .nav-links li a:hover {
             color: var(--primary-blue);
         }
-        
+
         .mobile-toggle {
             display: none;
             font-size: 24px;
             cursor: pointer;
         }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
@@ -169,7 +170,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -182,7 +183,7 @@
             opacity: 0.1;
             z-index: 0;
         }
-        
+
         .hero-container {
             display: flex;
             align-items: center;
@@ -191,44 +192,44 @@
             position: relative;
             z-index: 1;
         }
-        
+
         .hero-content {
             flex: 1;
             max-width: 600px;
         }
-        
+
         .hero h1 {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 20px;
             line-height: 1.2;
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
-        
+
         .hero-buttons {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
-        
+
         .hero-image-container {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
+
         .hero-image-new {
             max-width: 100%;
             height: auto;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
-        
+
         /* Hero & CTA Button Overrides for Visibility */
         .hero .btn-primary,
         .cta .btn-secondary {
@@ -236,58 +237,58 @@
             color: var(--primary-green);
             border: 2px solid white;
         }
-        
+
         .hero .btn-primary:hover,
         .cta .btn-secondary:hover {
             background-color: transparent;
             color: white;
             border: 2px solid white;
         }
-        
+
         .hero .btn-outline,
         .cta .btn-outline {
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.5);
         }
-        
+
         .hero .btn-outline:hover,
         .cta .btn-outline:hover {
             background-color: white;
             color: var(--primary-green);
             border: 2px solid white;
         }
-        
+
         /* Features Section */
         .features {
             padding: 100px 0;
             background-color: var(--light);
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 60px;
         }
-        
+
         .section-title h2 {
             font-size: 2.5rem;
             margin-bottom: 15px;
             color: var(--dark);
         }
-        
+
         .section-title p {
             color: var(--medium);
             max-width: 600px;
             margin: 0 auto;
             font-size: 1.1rem;
         }
-        
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
-        
+
         .feature-card {
             background: white;
             border-radius: 10px;
@@ -296,12 +297,12 @@
             transition: var(--transition);
             text-align: center;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .feature-icon {
             width: 80px;
             height: 80px;
@@ -315,7 +316,7 @@
             border: 1px solid rgba(78, 172, 87, 0.1);
             position: relative;
         }
-        
+
         .feature-icon::after {
             content: '';
             position: absolute;
@@ -327,45 +328,45 @@
             transform: scale(1.1);
             transition: var(--transition);
         }
-        
+
         .feature-card:hover .feature-icon::after {
             opacity: 0.3;
             transform: scale(1);
         }
-        
+
         .feature-icon i {
             font-size: 32px;
             color: var(--primary-green);
             filter: drop-shadow(0 4px 6px rgba(78, 172, 87, 0.2));
         }
-        
+
         .feature-card:hover .feature-icon {
             background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
             transform: rotate(10deg);
         }
-        
+
         .feature-card:hover .feature-icon i {
             color: white;
             filter: none;
         }
-        
+
         .feature-card h3 {
             margin-bottom: 15px;
             font-weight: 600;
         }
-        
+
         /* How It Works Section */
         .how-it-works {
             padding: 100px 0;
         }
-        
+
         .steps {
             display: flex;
             justify-content: space-between;
             margin-top: 50px;
             position: relative;
         }
-        
+
         .steps::before {
             content: '';
             position: absolute;
@@ -377,7 +378,7 @@
             z-index: -1;
             transform: translateY(-50%);
         }
-        
+
         .step {
             display: flex;
             flex-direction: column;
@@ -387,7 +388,7 @@
             position: relative;
             background-color: white;
         }
-        
+
         .step-number {
             width: 60px;
             height: 60px;
@@ -401,24 +402,24 @@
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
-        
+
         .step h3 {
             margin-bottom: 10px;
             font-weight: 600;
         }
-        
+
         /* Services Section */
         .services {
             padding: 100px 0;
             background-color: var(--light);
         }
-        
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
         }
-        
+
         .service-card {
             display: flex;
             flex-direction: column;
@@ -428,50 +429,50 @@
             box-shadow: var(--shadow);
             transition: var(--transition);
         }
-        
+
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .service-image {
             width: 100%;
             height: 250px;
             overflow: hidden;
         }
-        
+
         .service-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
-        
+
         .service-card:hover .service-image img {
             transform: scale(1.1);
         }
-        
+
         .service-content {
             padding: 20px;
         }
-        
+
         .service-content h3 {
             margin-bottom: 10px;
             font-weight: 600;
             color: var(--dark);
         }
-        
+
         /* Testimonials Section */
         .testimonials {
             padding: 100px 0;
         }
-        
+
         .testimonials-container {
             position: relative;
             max-width: 900px;
             margin: 0 auto;
         }
-        
+
         .testimonial-card {
             background-color: white;
             border-radius: 10px;
@@ -480,25 +481,25 @@
             text-align: center;
             margin: 20px;
         }
-        
+
         .testimonial-rating {
             color: #FFD700;
             font-size: 20px;
             margin-bottom: 20px;
         }
-        
+
         .testimonial-text {
             font-style: italic;
             margin-bottom: 30px;
             font-size: 1.1rem;
         }
-        
+
         .testimonial-author {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
+
         .testimonial-avatar {
             width: 60px;
             height: 60px;
@@ -506,35 +507,34 @@
             overflow: hidden;
             margin-right: 15px;
         }
-        
+
         .testimonial-avatar img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .testimonial-name h4 {
             font-weight: 600;
             margin-bottom: 5px;
         }
-        
+
         .testimonial-name p {
             color: var(--medium);
             font-size: 0.9rem;
         }
-        
-        /* Pricing Section */
+
         .pricing {
             padding: 100px 0;
             background-color: var(--light);
         }
-        
+
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
-        
+
         .pricing-card {
             background: white;
             border-radius: 10px;
@@ -543,14 +543,14 @@
             transition: var(--transition);
             position: relative;
         }
-        
+
         .pricing-card.featured {
             transform: scale(1.05);
             z-index: 1;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             border: 2px solid var(--primary-blue);
         }
-        
+
         .pricing-card.featured::before {
             content: 'Most Popular';
             position: absolute;
@@ -562,80 +562,80 @@
             font-size: 0.8rem;
             transform: rotate(45deg);
         }
-        
+
         .pricing-header {
             background-color: var(--primary-green);
             color: white;
             padding: 30px;
             text-align: center;
         }
-        
+
         .pricing-card.featured .pricing-header {
             background-color: var(--primary-blue);
         }
-        
+
         .pricing-name {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 10px;
         }
-        
+
         .pricing-price {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 10px;
         }
-        
+
         .pricing-duration {
             font-size: 0.9rem;
         }
-        
+
         .pricing-features {
             padding: 30px;
         }
-        
+
         .pricing-features ul li {
             padding: 10px 0;
             border-bottom: 1px solid #eee;
             display: flex;
             align-items: center;
         }
-        
+
         .pricing-features ul li:last-child {
             border-bottom: none;
         }
-        
+
         .pricing-features ul li i {
             color: var(--primary-green);
             margin-right: 10px;
         }
-        
+
         .pricing-card.featured .pricing-features ul li i {
             color: var(--primary-blue);
         }
-        
+
         .pricing-btn {
             padding: 0 30px 30px;
             text-align: center;
         }
-        
+
         /* FAQ Section */
         .faq {
             padding: 100px 0;
         }
-        
+
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .faq-item {
             margin-bottom: 20px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
         }
-        
+
         .faq-question {
             padding: 20px;
             background-color: white;
@@ -645,11 +645,11 @@
             align-items: center;
             cursor: pointer;
         }
-        
+
         .faq-question i {
             transition: var(--transition);
         }
-        
+
         .faq-answer {
             padding: 0 20px;
             max-height: 0;
@@ -657,19 +657,19 @@
             background-color: #f9f9f9;
             transition: max-height 0.3s ease;
         }
-        
+
         .faq-answer-inner {
             padding: 20px 0;
         }
-        
+
         .faq-item.active .faq-question i {
             transform: rotate(180deg);
         }
-        
+
         .faq-item.active .faq-answer {
             max-height: 1000px;
         }
-        
+
         /* CTA Section */
         .cta {
             padding: 100px 0;
@@ -677,12 +677,12 @@
             color: white;
             text-align: center;
         }
-        
+
         .cta h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
-        
+
         .cta p {
             font-size: 1.2rem;
             margin-bottom: 30px;
@@ -690,37 +690,37 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .cta-buttons {
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
         }
-        
+
         /* Footer */
         footer {
             background-color: var(--dark);
             color: white;
             padding: 80px 0 20px;
         }
-        
+
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 30px;
             margin-bottom: 50px;
         }
-        
+
         .footer-about img {
             height: 50px;
             margin-bottom: 20px;
         }
-        
+
         .footer-about p {
             margin-bottom: 20px;
         }
-        
+
         .footer-title {
             font-size: 1.2rem;
             font-weight: 600;
@@ -728,7 +728,7 @@
             position: relative;
             padding-bottom: 10px;
         }
-        
+
         .footer-title::after {
             content: '';
             position: absolute;
@@ -738,30 +738,30 @@
             height: 2px;
             background-color: var(--primary-blue);
         }
-        
+
         .footer-links li {
             margin-bottom: 10px;
         }
-        
+
         .footer-links li a:hover {
             color: var(--primary-blue);
         }
-        
+
         .footer-contact li {
             display: flex;
             margin-bottom: 15px;
         }
-        
+
         .footer-contact li i {
             margin-right: 10px;
             color: var(--primary-blue);
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-links a {
             width: 40px;
             height: 40px;
@@ -772,11 +772,11 @@
             justify-content: center;
             transition: var(--transition);
         }
-        
+
         .social-links a:hover {
             background-color: var(--primary-blue);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 30px;
@@ -784,48 +784,50 @@
             font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.7);
         }
-        
+
         /* Animation class */
         .fade-up {
             animation: fadeUp 0.5s ease-out forwards;
             opacity: 0;
         }
-        
+
         @keyframes fadeUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
 
-        
+
+
         /* Responsive Styles */
         @media (max-width: 1024px) {
+
             .features-grid,
             .pricing-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .hero-image {
                 width: 500px;
                 right: -150px;
             }
-            
+
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
         }
-        
+
         @media (max-width: 768px) {
             .mobile-toggle {
                 display: block;
             }
-            
+
             .nav-links {
                 position: fixed;
                 top: 80px;
@@ -839,68 +841,69 @@
                 transition: var(--transition);
                 box-shadow: var(--shadow);
             }
-            
+
             .nav-links.active {
                 height: auto;
                 padding: 20px 0;
             }
-            
+
             .nav-links li {
                 margin: 10px 0;
             }
-            
+
             .hero-container {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             .hero-content {
                 max-width: 100%;
             }
-            
+
             .hero-image-container {
                 width: 100%;
                 margin-top: 40px;
             }
-            
+
             .hero-buttons {
                 justify-content: center;
             }
-            
+
             .features-grid,
             .services-grid,
             .pricing-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .steps {
                 flex-direction: column;
                 gap: 40px;
             }
-            
+
             .steps::before {
                 display: none;
             }
-            
+
             .step {
                 width: 100%;
             }
-            
+
             .service-card {
                 flex-direction: column;
             }
-            
+
             .service-image {
                 width: 100%;
                 height: 200px;
             }
-            
+
             .footer-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
 
 
@@ -929,7 +932,8 @@
             <div class="hero-container">
                 <div class="hero-content fade-up">
                     <h1>Professional Pest Control Solutions for Your Home & Business</h1>
-                    <p>Protect your property from unwanted pests with our environmentally friendly and effective pest control services. We eliminate pests and prevent future infestations.</p>
+                    <p>Protect your property from unwanted pests with our environmentally friendly and effective pest
+                        control services. We eliminate pests and prevent future infestations.</p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary btn-lg">Get Your Free Quote</a>
                         <a href="#services" class="btn btn-outline btn-lg">Explore Services</a>
@@ -947,7 +951,8 @@
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Why Choose Our Pest Control?</h2>
-                <p>We provide comprehensive pest management solutions with a focus on safety, effectiveness, and customer satisfaction.</p>
+                <p>We provide comprehensive pest management solutions with a focus on safety, effectiveness, and
+                    customer satisfaction.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
@@ -955,21 +960,24 @@
                         <i class="fas fa-leaf"></i>
                     </div>
                     <h3>Safe & Eco-Friendly</h3>
-                    <p>Our treatments are safe for your family, pets, and the environment while remaining highly effective against pests.</p>
+                    <p>Our treatments are safe for your family, pets, and the environment while remaining highly
+                        effective against pests.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
                         <i class="fas fa-user-check"></i>
                     </div>
                     <h3>Licensed Professionals</h3>
-                    <p>Our team consists of certified technicians with extensive training and experience in pest control.</p>
+                    <p>Our team consists of certified technicians with extensive training and experience in pest
+                        control.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Fast Response</h3>
-                    <p>We understand pest emergencies require immediate attention. Our team responds quickly to your needs.</p>
+                    <p>We understand pest emergencies require immediate attention. Our team responds quickly to your
+                        needs.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon">
@@ -983,7 +991,8 @@
                         <i class="fas fa-clipboard-check"></i>
                     </div>
                     <h3>Preventative Solutions</h3>
-                    <p>We don't just eliminate current pests; we implement strategies to prevent future infestations.</p>
+                    <p>We don't just eliminate current pests; we implement strategies to prevent future infestations.
+                    </p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="feature-icon">
@@ -1042,7 +1051,8 @@
                     </div>
                     <div class="service-content">
                         <h3>Termite Control</h3>
-                        <p>Protect your property from these destructive pests with our comprehensive termite control treatments.</p>
+                        <p>Protect your property from these destructive pests with our comprehensive termite control
+                            treatments.</p>
                         <a href="#contact" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
@@ -1052,7 +1062,8 @@
                     </div>
                     <div class="service-content">
                         <h3>Rodent Control</h3>
-                        <p>Eliminate mice, rats, and other rodents with our humane and effective rodent control solutions.</p>
+                        <p>Eliminate mice, rats, and other rodents with our humane and effective rodent control
+                            solutions.</p>
                         <a href="#contact" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
@@ -1072,7 +1083,8 @@
                     </div>
                     <div class="service-content">
                         <h3>Bed Bug Treatment</h3>
-                        <p>Our specialized bed bug treatments eliminate these persistent pests from your home completely.</p>
+                        <p>Our specialized bed bug treatments eliminate these persistent pests from your home
+                            completely.</p>
                         <a href="#contact" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
@@ -1085,7 +1097,8 @@
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>What Our Customers Say</h2>
-                <p>Don't just take our word for it. See what our satisfied customers have to say about our pest control services.</p>
+                <p>Don't just take our word for it. See what our satisfied customers have to say about our pest control
+                    services.</p>
             </div>
             <div class="testimonials-container" data-aos="fade-up">
                 <div class="testimonial-card">
@@ -1097,7 +1110,9 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <div class="testimonial-text">
-                        "We had a serious ant problem that no store-bought product could fix. Find Your Pest Plans came in, identified the issue, and completely eliminated the problem. Their preventative measures have kept our home pest-free for months!"
+                        "We had a serious ant problem that no store-bought product could fix. Find Your Pest Plans came
+                        in, identified the issue, and completely eliminated the problem. Their preventative measures
+                        have kept our home pest-free for months!"
                     </div>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">
@@ -1200,7 +1215,9 @@
                     </div>
                     <div class="faq-answer" style="max-height: 1000px;">
                         <div class="faq-answer-inner">
-                            <p>Yes, we use eco-friendly products that are safe for your family and pets. Our technicians are trained to apply treatments in a way that minimizes exposure to humans and pets. We'll provide specific instructions on when it's safe to re-enter treated areas.</p>
+                            <p>Yes, we use eco-friendly products that are safe for your family and pets. Our technicians
+                                are trained to apply treatments in a way that minimizes exposure to humans and pets.
+                                We'll provide specific instructions on when it's safe to re-enter treated areas.</p>
                         </div>
                     </div>
                 </div>
@@ -1211,7 +1228,10 @@
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>The frequency depends on your specific situation and pest pressures. For most homes, quarterly treatments (every 3 months) provide excellent year-round protection. Businesses may require monthly service. After inspection, we'll recommend the optimal schedule for your property.</p>
+                            <p>The frequency depends on your specific situation and pest pressures. For most homes,
+                                quarterly treatments (every 3 months) provide excellent year-round protection.
+                                Businesses may require monthly service. After inspection, we'll recommend the optimal
+                                schedule for your property.</p>
                         </div>
                     </div>
                 </div>
@@ -1222,7 +1242,10 @@
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>Yes, there are typically a few simple preparations needed. We'll provide you with a detailed preparation checklist prior to your appointment. Common preparations include clearing clutter, moving furniture from walls, and ensuring pets are secured. This helps us provide the most effective treatment.</p>
+                            <p>Yes, there are typically a few simple preparations needed. We'll provide you with a
+                                detailed preparation checklist prior to your appointment. Common preparations include
+                                clearing clutter, moving furniture from walls, and ensuring pets are secured. This helps
+                                us provide the most effective treatment.</p>
                         </div>
                     </div>
                 </div>
@@ -1233,7 +1256,10 @@
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>Most customers notice a significant reduction in pest activity within 24-48 hours after treatment. However, complete elimination may take longer depending on the type of pest and severity of infestation. Some pests, like termites or bed bugs, may require multiple treatments for complete elimination.</p>
+                            <p>Most customers notice a significant reduction in pest activity within 24-48 hours after
+                                treatment. However, complete elimination may take longer depending on the type of pest
+                                and severity of infestation. Some pests, like termites or bed bugs, may require multiple
+                                treatments for complete elimination.</p>
                         </div>
                     </div>
                 </div>
@@ -1244,7 +1270,10 @@
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>All our service plans include a satisfaction guarantee. If pests return during your warranty period, we'll return and retreat at no additional cost. This is why many customers choose our Protection or Premium Plans for continuous coverage throughout the year.</p>
+                            <p>All our service plans include a satisfaction guarantee. If pests return during your
+                                warranty period, we'll return and retreat at no additional cost. This is why many
+                                customers choose our Protection or Premium Plans for continuous coverage throughout the
+                                year.</p>
                         </div>
                     </div>
                 </div>
@@ -1256,7 +1285,8 @@
     <section class="cta" id="contact">
         <div class="container">
             <h2 data-aos="fade-up">Ready to Enjoy a Pest-Free Environment?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Schedule your free inspection today and take the first step toward eliminating your pest problems for good. Our expert technicians are ready to help!</p>
+            <p data-aos="fade-up" data-aos-delay="100">Schedule your free inspection today and take the first step
+                toward eliminating your pest problems for good. Our expert technicians are ready to help!</p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
                 <a href="tel:1234567890" class="btn btn-secondary btn-lg">Call Now: (123) 456-7890</a>
                 <a href="#" class="btn btn-outline btn-lg">Schedule Online</a>
@@ -1270,7 +1300,8 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <img src="images/Logo.png" alt="Find Your Pest Plans Logo">
-                    <p>We provide professional pest control services for residential and commercial properties. Our eco-friendly solutions ensure a pest-free environment for you and your loved ones.</p>
+                    <p>We provide professional pest control services for residential and commercial properties. Our
+                        eco-friendly solutions ensure a pest-free environment for you and your loved ones.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1338,7 +1369,7 @@
         });
 
         // Mobile Menu Toggle
-        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+        document.querySelector('.mobile-toggle').addEventListener('click', function () {
             document.querySelector('.nav-links').classList.toggle('active');
         });
 
@@ -1351,7 +1382,7 @@
         });
 
 
-        
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1362,7 +1393,7 @@
                         top: target.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     document.querySelector('.nav-links').classList.remove('active');
                 }
@@ -1370,4 +1401,5 @@
         });
     </script>
 </body>
+
 </html>
