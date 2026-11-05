@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Find Your Pest Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/Pest-control-faviocn.png">
+    <style>
+        :root {
+            --primary-green: #4EAC57;
+            --secondary-green: #92C657;
+            --primary-blue: #28A9E1;
+            --dark: #333333;
+            --light: #f8f9fa;
+            --medium: #6c757d;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: white;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--primary-blue);
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .page-content {
+            max-width: 800px;
+            margin: -30px auto 60px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 40px;
+            position: relative;
+        }
+
+        .page-content h2 {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            margin: 30px 0 12px;
+        }
+
+        .page-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .page-content p,
+        .page-content li {
+            margin-bottom: 14px;
+            color: var(--medium);
+        }
+
+        .page-content ul {
+            list-style: disc;
+            padding-left: 22px;
+            margin-bottom: 14px;
+        }
+
+        .page-content a {
+            color: var(--primary-blue);
+        }
+
+        .updated {
+            font-size: 0.9rem;
+            color: var(--medium);
+            margin-bottom: 24px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            margin-top: 15px;
+        }
+
+        .legal-links a {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .legal-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.5;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-content {
+                padding: 28px 20px;
+                margin: -20px 20px 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Find Your Pest Plans Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Please read these terms carefully before using our service</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <article class="page-content">
+            <p class="updated">Last updated: November 5, 2026</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing findyourpestplans.org or contacting Find Your Pest Plans by phone or email, you agree to
+                these Terms of Service. If you do not agree, please do not use our website or services.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>Find Your Pest Plans is a free matching service that helps homeowners connect with independent pest
+                control providers in our network. We do not ourselves provide pest control, extermination, inspection,
+                or related contracting services.</p>
+            <p>When you call our phone number, your call connects to an independent provider in our network. Any
+                services, pricing, warranties, or work performed are solely between you and that independent provider.</p>
+
+            <h2>3. No Warranty of Provider Work</h2>
+            <p>All contractors and providers are independent. Find Your Pest Plans does not warrant or guarantee any
+                work performed by providers in our network. It is your responsibility to verify that any hired
+                contractor holds the licenses and insurance required for the work being performed.</p>
+
+            <h2>4. Website Content</h2>
+            <p>Information on this website is provided for general informational purposes. Service descriptions,
+                process steps, and related content are illustrative and may not reflect the specific offerings of any
+                particular provider. All persons depicted in photos or videos are actors or models and are not
+                contractors listed through Find Your Pest Plans.</p>
+
+            <h2>5. User Responsibilities</h2>
+            <p>You agree to:</p>
+            <ul>
+                <li>Provide accurate information when requesting a connection or service</li>
+                <li>Use our website and phone lines only for lawful purposes</li>
+                <li>Independently evaluate any provider before entering into a service agreement</li>
+            </ul>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, Find Your Pest Plans and its owners, affiliates, and partners
+                shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or for
+                any loss arising from your use of our matching service or from services performed by independent
+                providers. Our total liability for any claim related to these terms or our service shall not exceed one
+                hundred dollars ($100).</p>
+
+            <h2>7. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless Find Your Pest Plans from claims arising out of your use of our
+                service, your dealings with independent providers, or your violation of these terms.</p>
+
+            <h2>8. Intellectual Property</h2>
+            <p>Website content, branding, and materials are owned by Find Your Pest Plans or its licensors. You may not
+                copy, modify, or distribute our content without prior written permission.</p>
+
+            <h2>9. Third-Party Links</h2>
+            <p>Our website may reference third parties. We are not responsible for the content, policies, or practices
+                of third-party websites or providers.</p>
+
+            <h2>10. Changes to Terms</h2>
+            <p>We may update these Terms of Service at any time. The "Last updated" date reflects the latest revision.
+                Continued use of our services after changes constitutes acceptance of the updated terms.</p>
+
+            <h2>11. Governing Law</h2>
+            <p>These terms are governed by the laws of the United States and the state in which Find Your Pest Plans
+                primarily operates, without regard to conflict-of-law principles.</p>
+
+            <h2>12. Contact</h2>
+            <p>Questions about these terms may be sent to
+                <a href="mailto:info@findyourpestplans.org">info@findyourpestplans.org</a> or
+                <a href="tel:8889759214">(888) 975-9214</a>.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Find Your Pest Plans. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="about.html">About Us</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p>Disclaimer: Find Your Pest Plans is a free service to assist homeowners in connecting with local
+                    service providers. All contractors/providers are independent and Find Your Pest Plans does not
+                    warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that
+                    the hired contractor furnishes the necessary license and insurance required for the work being
+                    performed. All persons depicted in a photo or video are actors or models and not contractors listed
+                    on Find Your Pest Plans.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
